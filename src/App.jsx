@@ -5,6 +5,7 @@ import { useState } from "react";
 function App() {
   const startingJoy = 40
   const startingMoney = 50
+  
 
   const [joyLevel, setJoyLevel] = useState(startingJoy)
   const [moneyLevel, setMoneyLevel] = useState(startingMoney)
