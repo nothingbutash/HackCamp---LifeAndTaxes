@@ -5,7 +5,10 @@ import { useState } from "react";
 function App() {
   const startingJoy = 40
   const startingMoney = 50
+  const startingAge = 18
+  const maximumAge = 80
   
+  const [age, setAge] = useState(startingAge) //age value, which will be updated and accessed for loop
 
   const [joyLevel, setJoyLevel] = useState(startingJoy)
   const [moneyLevel, setMoneyLevel] = useState(startingMoney)
@@ -20,12 +23,17 @@ function App() {
     setMoneyLevel(moneyLevel + num)
   }
 
+  // for (let i = startingAge; i < maximumAge; i++) {
+    
+  //   setAge(i)
+  // }
+
   return (
     <div className="app">
       <h1>GAME NAME HERE</h1>
       <Meter type="Joy" value={joyLevel} colour="red" place={1} />
       <Meter type="Money" value={moneyLevel} colour="green" place={2} />
-      <h2>Age: {}</h2>
+      <h2>Age: {age}</h2>
     </div>
   );
 }
