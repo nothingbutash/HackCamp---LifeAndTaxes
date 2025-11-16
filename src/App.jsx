@@ -23,11 +23,6 @@ function App() {
     setMoneyLevel(moneyLevel + num)
   }
 
-  // for (let i = startingAge; i < maximumAge; i++) {
-    
-  //   setAge(i)
-  // }
-
   return (
     <div className="app">
       <h1>GAME NAME HERE</h1>
