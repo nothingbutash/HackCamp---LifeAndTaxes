@@ -1,66 +1,30 @@
 import "./App.css";
-import Tier from "./components/Tier";
+import Meter from "./components/Meter";
 import { useState } from "react";
 
 function App() {
-  // const [counter, setCounter] = useState(0);
+  const startingJoy = 40
+  const startingMoney = 50
 
-  // States for our controlled inputs
-  const [tier, setTier] = useState("");
-  const [image, setImage] = useState("");
-  const [name, setName] = useState("");
+  const [joyLevel, setJoyLevel] = useState(startingJoy)
+  const [moneyLevel, setMoneyLevel] = useState(startingMoney)
 
-  // States for our data
-  const [aTierItems, setATierItems] = useState([]);
-  const [fTierItems, setFTierItems] = useState([]);
+  //Add the given amount to joyLevel
+  function addJoy(num) {
+    setJoyLevel(joyLevel + num)
+  }
 
-  function addToTier() {
-    if (tier == "A") {
-      // Set the aTierItems list to...
-      setATierItems(
-        // A new list equalling whatever it is now, plus this new object added to the back of the list
-        aTierItems.concat({
-          image: image,
-          name: name,
-        })
-      );
-    } else if (tier == "F") {
-      setFTierItems(
-        fTierItems.concat({
-          image: image,
-          name: name,
-        })
-      );
-    }
+  //Add the given amount to moneyLevel
+  function addMoney(num) {
+    setMoneyLevel(moneyLevel + num)
   }
 
   return (
     <div className="app">
-      {/* Default HTML-like input tags. Each tag is connected to and updates one state. */}
-      <input
-        type="text"
-        value={tier}
-        onChange={(e) => setTier(e.target.value)}
-        placeholder="Tier"
-      />
-      <input
-        type="text"
-        value={image}
-        onChange={(e) => setImage(e.target.value)}
-        placeholder="Image"
-      />
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Name"
-      />
-      {/* A button that calls the addToTier function when clicked */}
-      <button onClick={addToTier}>Submit</button>
-
-      {/* This calls Tier(tier, list) in components/Tier.jsx */}
-      <Tier tier="A" list={aTierItems} />
-      <Tier tier="F" list={fTierItems} />
+      <h1>GAME NAME HERE</h1>
+      <Meter type="Joy" value={joyLevel} colour="red" place={1} />
+      <Meter type="Money" value={moneyLevel} colour="green" place={2} />
+      <h2>Age: {}</h2>
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.meter {
+    width: 12%;
+    border: 8px solid black;
+    display: flex;
+    align-items: flex-end;   /* push children to the bottom */
+    position: fixed;       /* lock to viewport */
+    bottom: 100px;          /* 10px above bottom of screen */
+}
