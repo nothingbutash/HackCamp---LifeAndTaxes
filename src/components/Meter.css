@@ -7,4 +7,5 @@
     bottom: 100px;          /* 10px above bottom of screen */
     display: inline-block; /* or inline-flex, or fit-content for width */
     padding: 10px;
+    font-family: Georgia;
 }
