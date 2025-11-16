@@ -8,7 +8,7 @@
 .app {
   /* display: flex; */
   flex-direction: column;
-    display: inline-block; /* or inline-flex, or fit-content for width */
-    border: 2px solid red;
-    padding: 10px; /* Provides space between the text and the border */
+  display: inline-block; /* or inline-flex, or fit-content for width */
+  border: 2px solid red;
+  padding: 10px; /* Provides space between the text and the border */
 }
