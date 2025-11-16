@@ -65,7 +65,7 @@ function Event(props) {
   return (
     <div className="eventBox">
       <img src={currentEvent.image}/>
-      <p>{currentEvent.message}</p>
+      <p class = "text">{currentEvent.message}</p>
       <button onClick={chooseOption1}>{currentEvent.button1}</button>
       <button onClick={chooseOption2}>{currentEvent.button2}</button>
     </div>
