@@ -7,7 +7,7 @@ function App() {
   const startingJoy = 40
   const startingMoney = 50
   const startingAge = 18
-  const maximumAge = 23
+  const maximumAge = 80
 
   const [age, setAge] = useState(startingAge)
   const [joyLevel, setJoyLevel] = useState(startingJoy)
