@@ -30,7 +30,7 @@ function App() {
       <Meter type="Money" value={moneyLevel} colour="green" place={2} />
       <h2>Age: {age}</h2>
       <Event joyLevel={joyLevel} setJoyLevel={setJoyLevel} moneyLevel={moneyLevel}
-      setMoneyLevel={setMoneyLevel} age={age}/>
+      setMoneyLevel={setMoneyLevel} age={age} setAge={setAge}/>
     </div>    
   );
 }

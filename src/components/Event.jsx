@@ -47,12 +47,14 @@ function Event(props) {
     props.setJoyLevel(props.joyLevel + currentEvent.dJoyT);
     props.setMoneyLevel(props.moneyLevel + currentEvent.dMoneyT);
     setIndex(index + 1);
+    props.setAge(props.age + 12);
   }
 
   function chooseOption2() {
     props.setJoyLevel(props.joyLevel + currentEvent.dJoyF);
     props.setMoneyLevel(props.moneyLevel + currentEvent.dMoneyF);
     setIndex(index + 1);
+    props.setAge(props.age + 12);
   }
 
   return (
