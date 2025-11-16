@@ -29,6 +29,7 @@ function App() {
       <Meter type="Joy" value={joyLevel} colour="red" place={1} />
       <Meter type="Money" value={moneyLevel} colour="green" place={2} />
       <h2>Age: {age}</h2>
+      <h2> Life Expectancy: {maximumAge} </h2>
       <Event joyLevel={joyLevel} setJoyLevel={setJoyLevel} moneyLevel={moneyLevel}
       setMoneyLevel={setMoneyLevel} age={age} setAge={setAge}/>
     </div>    
