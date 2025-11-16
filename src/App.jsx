@@ -6,7 +6,10 @@ import { useState } from "react";
 function App() {
   const startingJoy = 40
   const startingMoney = 50
+  const startingAge = 18
+  const maximumAge = 23
 
+  const [age, setAge] = useState(startingAge)
   const [joyLevel, setJoyLevel] = useState(startingJoy)
   const [moneyLevel, setMoneyLevel] = useState(startingMoney)
 
@@ -25,11 +28,10 @@ function App() {
       <h1>GAME NAME HERE</h1>
       <Meter type="Joy" value={joyLevel} colour="red" place={1} />
       <Meter type="Money" value={moneyLevel} colour="green" place={2} />
-      <h2>Age: {}</h2>
+      <h2>Age: {age}</h2>
       <Event joyLevel={joyLevel} setJoyLevel={setJoyLevel} moneyLevel={moneyLevel}
-      setMoneyLevel={setMoneyLevel}/>
-    </div>
-    
+      setMoneyLevel={setMoneyLevel} age={age}/>
+    </div>    
   );
 }
 
