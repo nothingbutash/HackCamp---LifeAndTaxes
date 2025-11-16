@@ -20,22 +20,17 @@ function Event(props) {
   const e5Msg = "Your pet dog got sick, but you have to work."
   const e5B1 = "Skip work to take your dog to the vet."
   const e5B2 = "Ignore your dog and go to work."
-  
+
   const events = [{image: "./assets/playerStrawHat.jpg", message: e1Msg, button1: e1B1, button2: e1B2, dJoyT: -props.joyLevel/2, dMoneyT: 7, dJoyF: 0, dMoneyF: 0},
                   {image: "./assets/doctor.jpg", message: e2Msg, button1: e2B1, button2: e2B2, dJoyT: 10, dMoneyT: -50, dJoyF: -props.joyLevel/2, dMoneyF: 0},
                   {image: "./assets.goldenlabubu.jpg", message: e3Msg, button1: e3B1, button2: e3B2, dJoyT: 30, dMoneyT: -1000000, dJoyF: -5, dMoneyF: 0},
                   {image: "./assets.playerStrawHat.jpg", message: e4Msg, button1: e4B1, button2: e4B2, dJoyT: -5, dMoneyT: 150, dJoyF: 15, dMoneyF: -150},
                   {image: "./assets.dogSprite.jpg", message: e5Msg, button1: e5B1, button2: e5B2, dJoyT: 40, dMoneyT: -100, dJoyF: -60, dMoneyF: 100}]
   return (
-    <div> 
-      <div className="item">
-        <img src={props.image} className="logo" />
-        <h2>{props.message}</h2>
-        <button onClick={props.function1}>{props.button1}</button>
-        <button onClick={props.function2}>{props.button2}</button>
-        
-      </div>
-      
+    <div className="eventBox">
+      <p>Event text will go here.</p>
+      <button>Option 1</button>
+      <button>Option 2</button>
     </div>
   );
 }
