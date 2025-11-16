@@ -1,11 +1,29 @@
-.meter {
-    width: 12%;
-    border: 8px solid black;
+/* Each meter box */
+.meter-container {
+    position: fixed;
+    bottom: 20px;        /* <— moves the meters to the bottom */
+    height: 40px;
+    width: 200px;        /* controls spacing between multiple meters */
     display: flex;
-    align-items: flex-end;   /* push children to the bottom */
-    position: fixed;       /* lock to viewport */
-    bottom: 100px;          /* 10px above bottom of screen */
-    display: inline-block; /* or inline-flex, or fit-content for width */
-    padding: 10px;
+    align-items: center;
+    justify-content: flex-start;
     font-family: Georgia;
-}
+  }
+  
+  /* The colored meter bar */
+  .meter-bar {
+    height: 100%;
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Text inside the bar */
+  .meter-text {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
