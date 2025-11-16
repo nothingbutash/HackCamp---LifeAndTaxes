@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="app">
       <h1>GAME NAME HERE</h1>
-      <Meter type="Joy" value={joyLevel} colour="red" place={1} />
+      <Meter type="Joy" value={joyLevel} colour="yellow" place={1} />
       <Meter type="Money" value={moneyLevel} colour="green" place={2} />
       <h2>Age: {age}</h2>
     </div>
