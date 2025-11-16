@@ -6,8 +6,10 @@
   color: lightcoral;
 }
 
-*{
+body{
   background-image: url("https://media.easy-peasy.ai/27feb2bb-aeb4-4a83-9fb6-8f3f2a15885e/ddf4efe4-87ab-4430-9e97-e0dbc98ed17f.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .app {
