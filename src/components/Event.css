@@ -31,7 +31,7 @@
   button {
     background-color: white;
     border: 2px solid #04AA6D;
-    color: black;
+    color: mintcream;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -40,6 +40,9 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    font-family: Fantasy;
+    background-color: cornflowerblue;
+
   }
   button:hover {
     background-color: #04AA6D;
